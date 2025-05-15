@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DosTress - Your Gateway to Laguna's Hidden Gem</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="sticky-header">
+        <nav class="bg-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <a href="/" class="flex items-center py-4 px-2">
+                                <span class="font-semibold text-gray-800 text-lg">DosTress</span>
+                            </a>
+                        </div>
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="index.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Home</a>
+                            <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+                            <a href="../destinations/destinations.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Destinations</a>
+                            <a href="../services/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+                            <a href="faqs.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">FAQs</a>
+                            <a href="blog.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Blog</a>
+                            <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
+                            <a href="../user/userDashboard.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Dashboard</a>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="../user/login.html" class="py-2 px-4 bg-white text-green-500 rounded border border-green-500 hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
+                        <a href="../user/register.html" class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300">Sign Up</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button" aria-label="Toggle Mobile Menu">
+                            <svg class="w-6 h-6 text-gray-500 hover:text-green-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+                    <li><a href="about.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">About</a></li>
+                    <li><a href="../destinations/destinations.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Destinations</a></li>
+                    <li><a href="../services/index.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Services</a></li>
+                    <li><a href="faqs.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">FAQs</a></li>
+                    <li><a href="blog.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Blog</a></li>
+                    <li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Contact</a></li>
+                    <li><a href="../user/userDashboard.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Dashboard</a></li>
+                    <li><a href="../user/login.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Log In</a></li>
+                    <li><a href="../user/register.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative h-screen">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('../assets/home-bg.jpg'); filter: brightness(0.7);"></div>
+        <div class="relative flex items-center justify-center h-full text-center px-4">
+            <div>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Discover the Wonders of Cabuyao</h1>
+                <p class="text-xl md:text-2xl text-white mb-8">Experience the perfect blend of culture, history, and natural beauty</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="../destinations/destinations.html" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">Explore Destinations</a>
+                    <a href="../services/bookingPage.html" class="bg-transparent hover:bg-white text-white hover:text-green-500 font-bold py-3 px-6 rounded-full border-2 border-white transition duration-300">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-12">
+        <div class="bg-white rounded-lg shadow-lg p-6 -mt-24 relative z-10">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Find Your Perfect Experience</h2>
+            <form class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                <div>
+                    <label for="destination" class="block text-gray-700 mb-2">Destination</label>
+                    <select id="destination" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        <option value="">All Destinations</option>
+                        <option value="parks">Parks & Nature</option>
+                        <option value="historical">Historical Sites</option>
+                        <option value="cuisine">Local Cuisine</option>
+                        <option value="hidden">Hidden Gems</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="check-in" class="block text-gray-700 mb-2">Check In</label>
+                    <input type="date" id="check-in" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <div>
+                    <label for="check-out" class="block text-gray-700 mb-2">Check Out</label>
+                    <input type="date" id="check-out" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                </div>
+                <div class="flex items-end">
+                    <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white p-3 rounded-lg transition duration-300">Search</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">Featured Destinations</h2>
+            <p class="text-gray-600 mt-2">Explore the most popular attractions in Cabuyao</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                <img src="../assets/church.png" alt="St. Polycarp Parish" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">Historical</span>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">St. Polycarp Parish</h3>
+                    <p class="text-gray-600 mb-4">Visit one of Cabuyao's oldest churches, a historical landmark and center of faith in the city.</p>
+                    <a href="/destinations/st-polycarp-parish" class="inline-block text-green-500 hover:text-green-600 font-semibold">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                <img src="../assets/park.jpg" alt="Cabuyao Lakeside Park" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">Nature</span>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Cabuyao Lakeside Park</h3>
+                    <p class="text-gray-600 mb-4">Enjoy scenic views, fresh air, and relaxing walks along the shores of Laguna de Bay at Cabuyao's popular lakeside park.</p>
+                    <a href="/destinations/parks.html" class="inline-block text-green-500 hover:text-green-600 font-semibold">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                <img src="../assets/market.png" alt="Puto Cabuyao House" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">Food</span>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Cabuyao Public Market</h3>
+                    <p class="text-gray-600 mb-4">Discover the heart of Cabuyao's food scene at the public market. Taste the city's famous Puto Cabuyao, Pancit Cabuyao, and other local delicacies, all made fresh by local vendors.</p>
+                    <a href="/destinations/foodStalls.html" class="inline-block text-green-500 hover:text-green-600 font-semibold">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </article>
+        </div>
+        <div class="text-center mt-8">
+            <a href="/destinations" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300">View All Destinations</a>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800">Popular Tour Packages</h2>
+                <p class="text-gray-600 mt-2">Curated experiences for every type of traveler</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="../assets/heritage.png" alt="Cultural Heritage Tour" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 right-0 bg-green-500 text-white px-4 py-2 rounded-bl-lg font-bold">30% OFF</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Cultural Heritage Tour</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="far fa-clock text-gray-500 mr-2"></i>
+                            <span class="text-gray-500">1 Day</span>
+                            <i class="fas fa-user-friends text-gray-500 ml-4 mr-2"></i>
+                            <span class="text-gray-500">Up to 10 people</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Explore Cabuyao's rich cultural heritage with visits to historical churches, museums, and cultural landmarks.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-500">₱1,299</span>
+                            <a href="/book/cultural-heritage" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition duration-300">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="../assets/nature.png" alt="Nature and Adventure" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 right-0 bg-green-500 text-white px-4 py-2 rounded-bl-lg font-bold">New</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Nature and Adventure</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="far fa-clock text-gray-500 mr-2"></i>
+                            <span class="text-gray-500">2 Days</span>
+                            <i class="fas fa-user-friends text-gray-500 ml-4 mr-2"></i>
+                            <span class="text-gray-500">Up to 8 people</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Connect with nature through eco-farm visits, hiking, and outdoor activities in Cabuyao's natural landscapes.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-500">₱2,499</span>
+                            <a href="/book/nature-adventure" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition duration-300">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="../assets/cuisine.png" alt="Food and Cuisine Tour" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Food and Cuisine Tour</h3>
+                        <div class="flex items-center mb-4">
+                            <i class="far fa-clock text-gray-500 mr-2"></i>
+                            <span class="text-gray-500">1 Day</span>
+                            <i class="fas fa-user-friends text-gray-500 ml-4 mr-2"></i>
+                            <span class="text-gray-500">Up to 12 people</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Sample authentic local delicacies, learn cooking techniques, and visit the best food spots in Cabuyao.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-green-500">₱1,799</span>
+                            <a href="/book/food-cuisine" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded transition duration-300">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">What Our Travelers Say</h2>
+            <p class="text-gray-600 mt-2">Authentic experiences from our community</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <blockquote class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <img src="../assets/defaultpic.png" alt="Maria Santos" class="w-12 h-12 rounded-full object-cover mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-800">Maria Santos</h4>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">"Our family trip to Cabuyao was unforgettable. The tour guide was knowledgeable, and the local food was amazing. St. Polycarp Parish was a highlight!"</p>
+            </blockquote>
+
+            <blockquote class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <img src="../assets/defaultpic.png" alt="John Reyes" class="w-12 h-12 rounded-full object-cover mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-800">John Reyes</h4>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">"The Nature and Adventure package was worth every peso. The eco-farms were beautiful and the hiking trails offered stunning views of Laguna!"</p>
+            </blockquote>
+
+            <blockquote class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="flex items-center mb-4">
+                    <img src="../assets/defaultpic.png" alt="Anna Cruz" class="w-12 h-12 rounded-full object-cover mr-4">
+                    <div>
+                        <h4 class="font-bold text-gray-800">Anna Cruz</h4>
+                        <div class="text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-gray-600 italic">"As a food blogger, I was impressed by the local cuisine tour. I discovered so many hidden gems and authentic flavors that I would never have found on my own."</p>
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="bg-green-500 py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Get Travel Updates</h2>
+            <p class="text-white mb-8 max-w-2xl mx-auto">Subscribe to our newsletter for exclusive deals, travel tips, and updates about Cabuyao's best attractions.</p>
+            <form class="flex flex-col md:flex-row justify-center max-w-lg mx-auto">
+                <input type="email" id="newsletter-email" placeholder="Your email address" class="p-3 rounded-l md:rounded-r-none mb-4 md:mb-0 w-full focus:outline-none">
+                <button type="submit" class="bg-gray-900 text-white font-bold py-3 px-6 rounded-r md:rounded-l-none hover:bg-gray-800 transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Discover Cabuyao</h3>
+                    <p class="text-gray-400">Your ultimate guide to exploring the wonders of Cabuyao, Laguna.</p>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="/about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="/destinations" class="text-gray-400 hover:text-white transition duration-300">Destinations</a></li>
+                        <li><a href="/tour-packages" class="text-gray-400 hover:text-white transition duration-300">Tour Packages</a></li>
+                        <li><a href="/blog" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="/contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <address class="space-y-2">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-green-500" aria-hidden="true"></i>
+                            <span class="text-gray-400">123 Main Street, Cabuyao, Laguna, Philippines</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-green-500" aria-hidden="true"></i>
+                            <span class="text-gray-400">+63 (49) 123-4567</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-green-500" aria-hidden="true"></i>
+                            <span class="text-gray-400"><a href="mailto:info@discovercabuyao.com" class="hover:text-white">info@discovercabuyao.com</a></span>
+                        </p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">We Accept</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <i class="fab fa-cc-visa text-2xl text-gray-400" aria-hidden="true"></i>
+                        <i class="fab fa-cc-mastercard text-2xl text-gray-400" aria-hidden="true"></i>
+                        <i class="fab fa-cc-paypal text-2xl text-gray-400" aria-hidden="true"></i>
+                        <i class="fab fa-cc-amex text-2xl text-gray-400" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-4">Languages</h3>
+                    <div class="flex space-x-2">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">English</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">Filipino</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Discover Cabuyao. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

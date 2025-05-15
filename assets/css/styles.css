@@ -1,0 +1,20 @@
+/* Common styles for sticky header */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+body {
+    padding-top: 64px; /* Height of your header */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding-top: 56px; /* Slightly smaller padding for mobile */
+    }
+} 

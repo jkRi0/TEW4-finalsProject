@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - DosTress</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-gray-50 font-sans">
+        <header class="sticky-header">        <nav class="bg-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <a href="/" class="flex items-center py-4 px-2">
+                                <span class="font-semibold text-gray-800 text-lg">DosTress</span>
+                            </a>
+                        </div>
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                            <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+                            <a href="../destinations/destinations.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Destinations</a>
+                            <a href="../services/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+                            <a href="faqs.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">FAQs</a>
+                            <a href="blog.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Blog</a>
+                            <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
+                            <a href="../user/userDashboard.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Dashboard</a>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="../user/login.html" class="py-2 px-4 bg-white text-green-500 rounded border border-green-500 hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
+                        <a href="../user/register.html" class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300">Sign Up</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class="w-6 h-6 text-gray-500 hover:text-green-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">About</a></li>
+                    <li><a href="../destinations/destinations.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Destinations</a></li>
+                    <li><a href="../services/index.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Services</a></li>
+                    <li><a href="faqs.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">FAQs</a></li>
+                    <li><a href="blog.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Blog</a></li>
+                    <li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Contact</a></li>
+                    <li><a href="../user/userDashboard.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Dashboard</a></li>
+                    <li><a href="../user/login.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Log In</a></li>
+                    <li><a href="../user/register.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative py-20 bg-green-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Discover Cabuyao Blog</h1>
+            <p class="text-xl text-white opacity-90">Stories, tips, and insights about Cabuyao's culture, food, and attractions</p>
+        </div>
+    </section>
+
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
+                <div class="w-full md:w-auto overflow-x-auto pb-2">
+                    <div class="flex space-x-4 min-w-max">
+                        <button class="px-4 py-2 bg-green-500 text-white rounded-full whitespace-nowrap">All</button>
+                        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-green-500 hover:text-white transition duration-300 whitespace-nowrap">Culture</button>
+                        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-green-500 hover:text-white transition duration-300 whitespace-nowrap">Food</button>
+                        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-green-500 hover:text-white transition duration-300 whitespace-nowrap">Nature</button>
+                        <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-full hover:bg-green-500 hover:text-white transition duration-300 whitespace-nowrap">Events</button>
+                    </div>
+                </div>
+                <div class="relative w-full md:w-auto">
+                    <input type="text" placeholder="Search articles..." class="w-full md:w-64 p-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="../assets/heritage.png" alt="Featured Article" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <div class="flex items-center mb-4">
+                            <span class="text-sm text-gray-500">March 15, 2024</span>
+                            <span class="mx-2 text-gray-500">•</span>
+                            <span class="text-sm text-green-500">Culture</span>
+                        </div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">The Rich Cultural Heritage of Cabuyao: A Journey Through Time</h2>
+                        <p class="text-gray-600 mb-6">Explore the fascinating history and cultural traditions that make Cabuyao a unique destination in Laguna. From ancient churches to traditional festivals, discover the stories that shaped this vibrant community.</p>
+                        <a href="#" class="inline-block text-green-500 hover:text-green-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Latest Articles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="../assets/market.png" alt="Article 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="text-sm text-gray-500">March 10, 2024</span>
+                            <span class="mx-2 text-gray-500">•</span>
+                            <span class="text-sm text-green-500">Food</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Must-Try Local Delicacies in Cabuyao</h3>
+                        <p class="text-gray-600 mb-4">Discover the authentic flavors of Cabuyao through its traditional dishes and street food favorites.</p>
+                        <a href="#" class="inline-block text-green-500 hover:text-green-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="../assets/park.jpg" alt="Article 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="text-sm text-gray-500">March 5, 2024</span>
+                            <span class="mx-2 text-gray-500">•</span>
+                            <span class="text-sm text-green-500">Nature</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Hidden Gems: Cabuyao's Natural Wonders</h3>
+                        <p class="text-gray-600 mb-4">Explore the lesser-known natural attractions that make Cabuyao a paradise for nature lovers.</p>
+                        <a href="#" class="inline-block text-green-500 hover:text-green-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <img src="../assets/home-bg.jpg" alt="Article 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="text-sm text-gray-500">February 28, 2024</span>
+                            <span class="mx-2 text-gray-500">•</span>
+                            <span class="text-sm text-green-500">Events</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Upcoming Festivals in Cabuyao 2024</h3>
+                        <p class="text-gray-600 mb-4">Mark your calendars for these exciting cultural events and festivals happening in Cabuyao this year.</p>
+                        <a href="#" class="inline-block text-green-500 hover:text-green-600 font-semibold">Read More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Popular Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <a href="#" class="group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="../assets/culture.jpg" alt="Culture" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <h3 class="text-2xl font-bold text-white">Culture</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="../assets/food.jpg" alt="Food" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <h3 class="text-2xl font-bold text-white">Food</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="../assets/nature.png" alt="Nature" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <h3 class="text-2xl font-bold text-white">Nature</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="group">
+                    <div class="relative rounded-lg overflow-hidden">
+                        <img src="../assets/event.jpg" alt="Events" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <h3 class="text-2xl font-bold text-white">Events</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-green-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Subscribe to Our Newsletter</h2>
+            <p class="text-xl text-white opacity-90 mb-8">Get the latest updates about Cabuyao's events, attractions, and travel tips.</p>
+            <form class="flex flex-col md:flex-row justify-center max-w-lg mx-auto">
+                <input type="email" placeholder="Your email address" class="p-3 rounded-l md:rounded-r-none mb-4 md:mb-0 w-full focus:outline-none">
+                <button type="submit" class="bg-gray-900 text-white font-bold py-3 px-6 rounded-r md:rounded-l-none hover:bg-gray-800 transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Discover Cabuyao</h3>
+                    <p class="text-gray-400">Your ultimate guide to exploring the wonders of Cabuyao, Laguna.</p>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="/about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="/destinations" class="text-gray-400 hover:text-white transition duration-300">Destinations</a></li>
+                        <li><a href="/tour-packages" class="text-gray-400 hover:text-white transition duration-300">Tour Packages</a></li>
+                        <li><a href="/blog" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="/contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <address class="space-y-2">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-green-500"></i>
+                            <span class="text-gray-400">123 Main Street, Cabuyao, Laguna, Philippines</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-green-500"></i>
+                            <span class="text-gray-400">+63 (49) 123-4567</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-green-500"></i>
+                            <span class="text-gray-400"><a href="mailto:info@discovercabuyao.com" class="hover:text-white">info@discovercabuyao.com</a></span>
+                        </p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">We Accept</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <i class="fab fa-cc-visa text-2xl text-gray-400"></i>
+                        <i class="fab fa-cc-mastercard text-2xl text-gray-400"></i>
+                        <i class="fab fa-cc-paypal text-2xl text-gray-400"></i>
+                        <i class="fab fa-cc-amex text-2xl text-gray-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-4">Languages</h3>
+                    <div class="flex space-x-2">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">English</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">Filipino</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Discover Cabuyao. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        const categoryButtons = document.querySelectorAll('.flex.space-x-4 button');
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove('bg-green-500', 'text-white');
+                    btn.classList.add('bg-gray-100', 'text-gray-700');
+                });
+                this.classList.remove('bg-gray-100', 'text-gray-700');
+                this.classList.add('bg-green-500', 'text-white');
+            });
+        });
+    </script>
+</body>
+</html>

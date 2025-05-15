@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Local Eats - DosTress</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="sticky-header">
+        <nav class="bg-white shadow-lg sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div class="md:hidden">
+                            <a href="destinations.html" class="flex items-center py-4 px-2 text-gray-500 hover:text-green-500">
+                                <i class="fas fa-arrow-left"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="../core-pages/index.html" class="flex items-center py-4 px-2">
+                                <span class="font-semibold text-gray-800 text-lg">DosTress</span>
+                            </a>
+                        </div>
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="../core-pages/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                            <a href="../core-pages/about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+                            <a href="destinations.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">Destinations</a>
+                            <a href="../services/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+                            <a href="../core-pages/faqs.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">FAQs</a>
+                            <a href="../core-pages/blog.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Blog</a>
+                            <a href="../core-pages/contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
+                            <a href="../user/userDashboard.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Dashboard</a>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="../user/login.html" class="py-2 px-4 bg-white text-green-500 rounded border border-green-500 hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
+                        <a href="../user/register.html" class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300">Sign Up</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button" aria-label="Toggle Mobile Menu">
+                            <svg class="w-6 h-6 text-gray-500 hover:text-green-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li><a href="../core-pages/index.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="../core-pages/about.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">About</a></li>
+                    <li><a href="destinations.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Destinations</a></li>
+                    <li><a href="../services/index.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Services</a></li>
+                    <li><a href="../core-pages/faqs.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">FAQs</a></li>
+                    <li><a href="../core-pages/blog.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Blog</a></li>
+                    <li><a href="../core-pages/contact.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Contact</a></li>
+                    <li><a href="../user/userDashboard.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Dashboard</a></li>
+                    <li><a href="../user/login.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Log In</a></li>
+                    <li><a href="../user/register.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="relative py-20 bg-green-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Food & Local Eats</h1>
+            <p class="text-xl text-white opacity-90">Taste the best of Cabuyao: must-try dishes, food stalls, and local delicacies</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <div class="md:flex">
+                        <div class="md:w-1/2">
+                            <img src="../assets/lutongBahay.jpg" alt="Lutong Bahay ni Aling Nena" class="w-full h-full object-cover">
+                        </div>
+                        <div class="md:w-1/2 p-8">
+                            <div class="flex items-center mb-4">
+                                <span class="text-sm text-gray-500">Featured</span>
+                                <span class="mx-2 text-gray-500">•</span>
+                                <span class="text-sm text-green-500">Local Eatery</span>
+                            </div>
+                            <h2 class="text-3xl font-bold text-gray-800 mb-4">Lutong Bahay ni Aling Nena</h2>
+                            <p class="text-gray-600 mb-6">A beloved food stall serving authentic Cabuyao home-cooked meals. Don't miss their famous Pancit Cabuyao and Puto Cabuyao!</p>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-2">Opening Hours</h3>
+                                    <p class="text-gray-600">10:00 AM - 9:00 PM</p>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800 mb-2">Price Range</h3>
+                                    <p class="text-gray-600">₱50 - ₱200</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center mb-6">
+                                <div class="text-yellow-400 mr-2">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="text-gray-600">4.5 (120 reviews)</span>
+                            </div>
+                            <a href="#" class="inline-block bg-green-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-600 transition duration-300">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Explore Food Stalls & Restaurants</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Example Food Stall 1 -->
+                    <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="../assets/puto.jpg" alt="Puto Cabuyao House" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">Delicacy</span>
+                                <div class="text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Puto Cabuyao House</h3>
+                            <p class="text-gray-600 mb-4">Famous for their soft and fluffy Puto Cabuyao, a must-try local delicacy.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-green-500 font-semibold">₱50 - ₱100</span>
+                                <a href="#" class="text-green-500 hover:text-green-600 font-semibold">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Example Food Stall 2 -->
+                    <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="../assets/sisig.png" alt="Sisig Express" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">Street Food</span>
+                                <div class="text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Sisig Express</h3>
+                            <p class="text-gray-600 mb-4">Quick, affordable, and delicious sisig bowls, perfect for a quick bite.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-green-500 font-semibold">₱60 - ₱120</span>
+                                <a href="#" class="text-green-500 hover:text-green-600 font-semibold">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Example Food Stall 3 -->
+                    <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                        <img src="../assets/bulalohan.jpg" alt="Bulalohan sa Kanto" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-green-600 bg-green-200">Restaurant</span>
+                                <div class="text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Bulalohan sa Kanto</h3>
+                            <p class="text-gray-600 mb-4">Hearty bulalo and other Filipino favorites in a cozy, local setting.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-green-500 font-semibold">₱100 - ₱250</span>
+                                <a href="#" class="text-green-500 hover:text-green-600 font-semibold">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Discover Cabuyao</h3>
+                    <p class="text-gray-400">Your ultimate guide to exploring the wonders of Cabuyao, Laguna.</p>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../core-pages/index.html" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="../core-pages/about.html" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="destinations.html" class="text-gray-400 hover:text-white transition duration-300">Destinations</a></li>
+                        <li><a href="../services/index.html" class="text-gray-400 hover:text-white transition duration-300">Tour Packages</a></li>
+                        <li><a href="../core-pages/blog.html" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="../core-pages/contact.html" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <address class="space-y-2">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-green-500" aria-hidden="true"></i>
+                            <span class="text-gray-400">123 Main Street, Cabuyao, Laguna, Philippines</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-green-500" aria-hidden="true"></i>
+                            <span class="text-gray-400">+63 (49) 123-4567</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-green-500" aria-hidden="true"></i>
+                            <span class="text-gray-400"><a href="mailto:info@discovercabuyao.com" class="hover:text-white">info@discovercabuyao.com</a></span>
+                        </p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">We Accept</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <i class="fab fa-cc-visa text-2xl text-gray-400" aria-hidden="true"></i>
+                        <i class="fab fa-cc-mastercard text-2xl text-gray-400" aria-hidden="true"></i>
+                        <i class="fab fa-cc-paypal text-2xl text-gray-400" aria-hidden="true"></i>
+                        <i class="fab fa-cc-amex text-2xl text-gray-400" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-4">Languages</h3>
+                    <div class="flex space-x-2">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">English</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">Filipino</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Discover Cabuyao. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

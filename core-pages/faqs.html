@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Discover Cabuyao</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="sticky-header">
+        <nav class="bg-white shadow-lg sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between">
+                    <div class="flex space-x-7">
+                        <div>
+                            <a href="/" class="flex items-center py-4 px-2">
+                                <span class="font-semibold text-gray-800 text-lg">DosTress</span>
+                            </a>
+                        </div>
+                        <div class="hidden md:flex items-center space-x-1">
+                            <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Home</a>
+                            <a href="about.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">About</a>
+                            <a href="../destinations/destinations.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Destinations</a>
+                            <a href="../services/index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Services</a>
+                            <a href="faqs.html" class="py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold">FAQs</a>
+                            <a href="blog.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Blog</a>
+                            <a href="contact.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Contact</a>
+                            <a href="../user/userDashboard.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300">Dashboard</a>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-3">
+                        <a href="../user/login.html" class="py-2 px-4 bg-white text-green-500 rounded border border-green-500 hover:bg-green-500 hover:text-white transition duration-300">Log In</a>
+                        <a href="../user/register.html" class="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300">Sign Up</a>
+                    </div>
+                    <div class="md:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+                            <svg class="w-6 h-6 text-gray-500 hover:text-green-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li><a href="index.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Home</a></li>
+                    <li><a href="about.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">About</a></li>
+                    <li><a href="../destinations/destinations.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Destinations</a></li>
+                    <li><a href="../services/index.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Services</a></li>
+                    <li><a href="faqs.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">FAQs</a></li>
+                    <li><a href="blog.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Blog</a></li>
+                    <li><a href="contact.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Contact</a></li>
+                    <li><a href="../user/userDashboard.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Dashboard</a></li>
+                    <li><a href="../user/login.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Log In</a></li>
+                    <li><a href="../user/register.html" class="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-green-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Frequently Asked Questions</h1>
+            <p class="text-xl text-white opacity-90">Find answers to common questions about visiting Cabuyao</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="relative">
+                    <input type="text" placeholder="Search FAQs..." class="w-full p-4 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <i class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <a href="#booking" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fas fa-calendar-check text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Booking & Reservations</h3>
+                    <p class="text-gray-600">Questions about making and managing your bookings</p>
+                </a>
+                <a href="#policies" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fas fa-file-contract text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Policies & Guidelines</h3>
+                    <p class="text-gray-600">Our terms, conditions, and travel policies</p>
+                </a>
+                <a href="#transportation" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fas fa-bus text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Transportation</h3>
+                    <p class="text-gray-600">Getting to and around Cabuyao</p>
+                </a>
+                <a href="#safety" class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 text-center">
+                    <i class="fas fa-shield-alt text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Safety & Health</h3>
+                    <p class="text-gray-600">Travel safety and health guidelines</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <!-- Booking & Reservations -->
+            <div id="booking" class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Booking & Reservations</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">How do I book a tour?</h3>
+                        <p class="text-gray-600">You can book a tour through our website, by calling our office, or by visiting us in person. Online bookings are available 24/7, while phone and in-person bookings are available during office hours.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">What payment methods do you accept?</h3>
+                        <p class="text-gray-600">We accept major credit cards (Visa, Mastercard, American Express), PayPal, and cash payments. For online bookings, we only accept card payments and PayPal.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Can I modify my booking?</h3>
+                        <p class="text-gray-600">Yes, you can modify your booking up to 48 hours before your scheduled tour. Please contact our customer service team to make any changes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Policies & Guidelines -->
+            <div id="policies" class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Policies & Guidelines</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">What is your cancellation policy?</h3>
+                        <p class="text-gray-600">We offer full refunds for cancellations made at least 48 hours before the tour. Cancellations made within 48 hours are subject to a 50% cancellation fee. No refunds are provided for no-shows.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Are there age restrictions for tours?</h3>
+                        <p class="text-gray-600">Most of our tours are suitable for all ages. However, some adventure tours may have minimum age requirements. Please check the specific tour details for age restrictions.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">What should I bring for the tour?</h3>
+                        <p class="text-gray-600">We recommend bringing comfortable walking shoes, weather-appropriate clothing, water, and a camera. Specific items may be required for certain tours, which will be listed in the tour details.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transportation -->
+            <div id="transportation" class="mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Transportation</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">How do I get to Cabuyao?</h3>
+                        <p class="text-gray-600">Cabuyao is accessible by bus from Manila, with regular services from major bus terminals. You can also reach Cabuyao by private vehicle via the South Luzon Expressway (SLEX).</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Is transportation included in the tours?</h3>
+                        <p class="text-gray-600">Yes, all our tours include transportation from our meeting point. We can also arrange pick-up from your hotel for an additional fee.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">What local transportation options are available?</h3>
+                        <p class="text-gray-600">Tricycles and jeepneys are the main modes of public transportation within Cabuyao. Taxis and ride-sharing services are also available.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Safety & Health -->
+            <div id="safety">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8">Safety & Health</h2>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">What safety measures are in place?</h3>
+                        <p class="text-gray-600">All our tours are conducted by licensed guides, and we maintain strict safety protocols. We regularly inspect our equipment and vehicles to ensure they meet safety standards.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Do I need travel insurance?</h3>
+                        <p class="text-gray-600">While not mandatory, we strongly recommend purchasing travel insurance to cover any unexpected situations during your trip.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">What health precautions should I take?</h3>
+                        <p class="text-gray-600">We recommend staying hydrated, using sunscreen, and bringing any necessary medications. Please inform us of any medical conditions before booking a tour.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="py-16 bg-green-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Still Have Questions?</h2>
+            <p class="text-xl text-white opacity-90 mb-8">We're here to help! Contact our support team for assistance.</p>
+            <a href="contact.html" class="inline-block bg-white text-green-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Discover Cabuyao</h3>
+                    <p class="text-gray-400">Your ultimate guide to exploring the wonders of Cabuyao, Laguna.</p>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="/about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="/destinations" class="text-gray-400 hover:text-white transition duration-300">Destinations</a></li>
+                        <li><a href="/tour-packages" class="text-gray-400 hover:text-white transition duration-300">Tour Packages</a></li>
+                        <li><a href="/blog" class="text-gray-400 hover:text-white transition duration-300">Blog</a></li>
+                        <li><a href="/contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+                    <address class="space-y-2">
+                        <p class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-green-500"></i>
+                            <span class="text-gray-400">123 Main Street, Cabuyao, Laguna, Philippines</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-green-500"></i>
+                            <span class="text-gray-400">+63 (49) 123-4567</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-green-500"></i>
+                            <span class="text-gray-400"><a href="mailto:info@discovercabuyao.com" class="hover:text-white">info@discovercabuyao.com</a></span>
+                        </p>
+                    </address>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">We Accept</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <i class="fab fa-cc-visa text-2xl text-gray-400"></i>
+                        <i class="fab fa-cc-mastercard text-2xl text-gray-400"></i>
+                        <i class="fab fa-cc-paypal text-2xl text-gray-400"></i>
+                        <i class="fab fa-cc-amex text-2xl text-gray-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 mt-4">Languages</h3>
+                    <div class="flex space-x-2">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">English</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">Filipino</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Discover Cabuyao. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // FAQ Search functionality
+        document.querySelector('input[type="text"]').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const faqItems = document.querySelectorAll('.bg-white.p-6.rounded-lg.shadow-lg');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('h3').textContent.toLowerCase();
+                const answer = item.querySelector('p').textContent.toLowerCase();
+                
+                if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
